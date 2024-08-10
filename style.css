@@ -1,0 +1,43 @@
+/* body {
+  background-color: aliceblue;
+}
+.roditel{
+  display: flex;
+  gap: 30px;
+}
+
+.list-item {
+  border: 2px solid #000;
+  width: 250px;
+  height: 380px;
+  text-align: center;
+  list-style: none;
+  background: white;
+}
+.list-item:hover{
+  background-color: rgb(231, 111, 229);
+  border: none;
+}
+.img {
+  width: 150px;
+  height: 150px;
+}
+.p{
+  font-size: 12px;
+}
+.button {
+  width: 130px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  background-color: black;
+}
+button:hover {
+  background-color: aliceblue;
+}
+.a{
+  color: #ffff;
+}
+.a:hover{
+  color: #000;
+} */
