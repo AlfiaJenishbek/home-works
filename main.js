@@ -1,67 +1,86 @@
-//TASC1
+// // // zadacha-1
+// const numbers = [1, 2, 3, 4, 5];
 
-// const student1 = {
-//   name: "alfiaa",
-//   lang: "KG",
-//   age: 20,
-//   sayHello: () => {},
-// };
-// student1.sayHello();
-// const student2 = Object.assign ({}, student1);
-// delete student2.age;
+// const kvadrat = numbers.map((num) => num ** 2);
+// console.log(kvadrat);
 
-// console.log(student2);
-
-// console.log(student1, "student1");
-// console.log(student2, "student2")
-
-
-//TASC3
-
-// const array = [true, 5, "hobbies", "hello"];
-// console.log([0][1], array);
-// array.pop();
-// console.log(array);
-// array.unshift("Ибадат", "Альфия");
-// array.push(20, 25);
-// array.shift();
-// array.slice(0, 3,"footboll");
-
-
-// TASC4
+// zadacha-2
 
 // const users = [
-//   1,
-//   2,
-//   3,
-//   "sdf",
-//   4,
-//   "sdf",
-//   { name: "ALMAZ" },
-//   3,
-//   true,
-//   2,
-//   [1, 6, 3],
-//   1,
+//   { firsName: "John", lastName: "obama", age: 34, gender: "male" },
+//   { firsName: "Arina", lastName: "Grande", age: 22, gender: "female" },
+//   { firsName: "Naruto", lastName: "Uzumaki", age: 19, gender: "male" },
+//   { firsName: "Gristiano", lastName: "Ronaldo", age: 38, gender: "male" },
 // ];
 
-// const getlengs = (firsArray) => {
-//   let sum = 0;
-//   for (const iterator of firsArray) {
-//     if (iterator && typeof iterator === "object") {
-//       for (let i = 0; i < iterator.length; i++) {
-//         sum = sum + iterator[i];
-//       }
-//     }
-//     if (iterator && typeof iterator === "number") {
-//       sum = sum + iterator;
-//     }
+// const array = users.map((item) => {
+//   return {
+//     fullname: item.firsName + " " + item.lastName,
+//     age: item.age,
+//     gender: item.gender,
+//   };
+// });
+// console.log(array);
+
+// zadacha-3
+
+// const numbers = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
+
+// const result = numbers.filter((item) => {
+//   if (item % 2 !== 1) {
+//     console.log(item);
 //   }
-//   console.log(sum);
-//   return sum;
-// };
+// });
 
+// // zadacha-4
 
+// const array =[
+//     {firstName:"John",lastName:"obama",age: 34, gender:"male"},
+//     {firstName:"Ariana",lastName:"Grande",age: 18, gender:"female"},
+//     {firstName:"Naruto",lastName:"Uzumaki",age: 19, gender:"male"},
+//     {firstName:"Kakashi",lastName:"Hatake",age: 28, gender:"male"},
+//     {firstName:"Sakura",lastName:"Chan",age: 18, gender:"female"},
+// ];
+// let users = array.filter((item) => item.gender === "female")
+// console.log(users);
 
-// let name1 = getlengs(users);
+// // zadacha-5
 
+// const numbers = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
+// const res = numbers.reduce((prevValue, initislValue) => {
+//   return prevValue + initislValue;
+// });
+// console.log(res);
+
+// zadacha-6
+
+// let sam = 0;
+
+// const numbers = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
+
+// numbers.forEach((element) => {
+//   if (element % 2 === 1) {
+//     sam = element + sam;
+//   }
+// });
+// console.log(sam);
+
+// zadacha-7
+
+// const users=[
+//     {firstName:"John",latsName:"obama",age:34,gender:"male"},
+//     {firstName:"Ariane",latsName:"Grande",age:18,gender:"male"},
+//     {firstName:"Naruto",latsName:"Uzumaki",age:19,gender:"male"},
+//     {firstName:"Kakashi",latsName:"Hatake",age:28,gender:"male"},
+//     {firstName:"Sakura",latsName:"Chan",age:18,gender:"male"}
+// ]
+// const getfind=users.find((item)=>item.firstName === "Naruto");
+
+// console.log(getfind);
+
+// zadacha-8
+
+// const numbers=[1,2,3,4,5,4,8,34,3,6];
+
+// const num =numbers.findIndex((element)=>element ===34)
+// console.log(num)
